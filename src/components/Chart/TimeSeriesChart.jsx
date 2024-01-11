@@ -120,14 +120,14 @@ const TimeSeriesChart = ({ data, loading }) => {
     //labels: filteredData.map((entry) => entry[0]),
     datasets: [
       {
-        label: "Total Value of Orders",
+        label: "Total Value of Orders" + (filter ? " By " + filter : ""),
         data: filteredData,
         borderColor: "rgb(255, 99, 132)",
         backgroundColor: "rgba(255, 99, 132, 0.5)",
         yAxisID: "y",
       },
       {
-        label: "Number of Orders",
+        label: "Number of Orders" + (filter ? " By " + filter : ""),
         data: filteredData.map((item) => ({ x: item.x, y: item.y1 })),
         borderColor: "rgb(53, 162, 235)",
         backgroundColor: "rgba(53, 162, 235, 0.5)",
