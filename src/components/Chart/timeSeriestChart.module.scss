@@ -1,0 +1,23 @@
+.container {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+button {
+    background-color: #E3F2FD;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
